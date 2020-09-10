@@ -1,6 +1,16 @@
+/** 
+ * Pinoy-Sweldo a module for computing Income Tax in the Philippines.
+ * :copyright: 2020-Present by Daniel De Castro.
+ * :license: MIT, see LICENSE for more details.
+*/
+
 package incometax.contribution;
 
 public class PhilHealthContribution extends Contribution{
+
+    // Calculates the PhilHealth monthly contribution depending
+    // on the user monthly income.
+    // Uses the PhilHealth Contribution Table 2019 for the computation
 
     private String membership;
 

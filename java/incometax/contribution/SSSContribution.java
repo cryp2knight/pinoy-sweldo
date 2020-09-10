@@ -1,6 +1,17 @@
+/** 
+ * Pinoy-Sweldo a module for computing Income Tax in the Philippines.
+ * :copyright: 2020-Present by Daniel De Castro.
+ * :license: MIT, see LICENSE for more details.
+*/
+
 package incometax.contribution;
 
 public class SSSContribution extends Contribution {
+
+    // Calculates the SSS monthly contribution depending
+    // on the user monthly income.
+    // Only applicable for employed users.
+    // Uses the SSS Contribution Table 2019 for the computation
 
     static final double[][] contributionTable = {
         {2250,80},

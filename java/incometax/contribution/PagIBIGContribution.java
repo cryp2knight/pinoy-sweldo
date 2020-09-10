@@ -1,6 +1,15 @@
+/** 
+ * Pinoy-Sweldo a module for computing Income Tax in the Philippines.
+ * :copyright: 2020-Present by Daniel De Castro.
+ * :license: MIT, see LICENSE for more details.
+*/
+
 package incometax.contribution;
 
 public class PagIBIGContribution extends Contribution{
+
+    // Calculates the Pag IBIG monthly contribution depending
+    // on the user monthly income.
 
     public PagIBIGContribution(double monthlySalary) throws Exception{
         super(monthlySalary);

@@ -1,8 +1,17 @@
+/** 
+ * Pinoy-Sweldo a module for computing Income Tax in the Philippines.
+ * :copyright: 2020-Present by Daniel De Castro.
+ * :license: MIT, see LICENSE for more details.
+*/
+
 package incometax;
 
 import incometax.contribution.*;
 
 public class IncomeTax{
+
+    // calculates the incme tax, netpay, and other contributions
+
     private SSSContribution sssContribution;
     private PhilHealthContribution philhealthContribution;
     private PagIBIGContribution pagibigContribution;
