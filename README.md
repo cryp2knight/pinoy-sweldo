@@ -8,3 +8,46 @@
 </div>
 
 
+## Usage
+### Java
+```java
+try {
+  IncomeTax tax = new IncomeTax(20000);
+  System.out.print(tax.toRepresentation());
+}catch(Exception e){
+  System.out.print(e.getMessage());
+}
+```
+#### Compile and run
+```bash
+javac Project.java && java Project
+```
+### C++
+```cpp
+IncomeTax tax = IncomeTax(20000);
+cout << tax.toRepresentation();
+```
+#### Compile and run
+```bash
+g++ sweldo.cpp -o sweldo && ./sweldo
+```
+### Python 3
+```py
+incometax = IncomeTax(20000)
+print(incometax)
+```
+#### Run
+```bash
+python3 main.py
+```
+
+## Tests
+### Python
+```bash
+python3 test.py
+```
+
+## TODO
+> Write unit tests
+
+> Other classification for contributions
