@@ -81,26 +81,26 @@ public class IncomeTax{
     }
 
     public double getIncomeTax() {
-        if (taxableIncome <= 20833 )
+        if (getTaxableIncome() <= 20833 )
             incomeTax = 0.0;
-        else if (taxableIncome > 20833 && taxableIncome <= 33332 )
-            incomeTax = ( taxableIncome - 20833 ) * 0.20;
-        else if (taxableIncome == 33333 )
+        else if (getTaxableIncome() > 20833 && getTaxableIncome() <= 33332 )
+            incomeTax = ( getTaxableIncome() - 20833 ) * 0.20;
+        else if (getTaxableIncome() == 33333 )
             incomeTax = 2500;
-        else if (taxableIncome > 33333 && taxableIncome <= 66666 )
-            incomeTax = ( taxableIncome - 33333 ) * 0.25 + 2500;
-        else if (taxableIncome == 66667 )
+        else if (getTaxableIncome() > 33333 && getTaxableIncome() <= 66666 )
+            incomeTax = ( getTaxableIncome() - 33333 ) * 0.25 + 2500;
+        else if (getTaxableIncome() == 66667 )
             incomeTax = 10833.33;
-        else if (taxableIncome > 66667 && taxableIncome <= 166666 )
-            incomeTax = ( taxableIncome - 66667 ) * 0.30 + 10833.33;
-        else if (taxableIncome == 166667 )
+        else if (getTaxableIncome() > 66667 && getTaxableIncome() <= 166666 )
+            incomeTax = ( getTaxableIncome() - 66667 ) * 0.30 + 10833.33;
+        else if (getTaxableIncome() == 166667 )
             incomeTax = 40833.33;
-        else if (taxableIncome > 166667 && taxableIncome <= 666666 )
-            incomeTax = ( taxableIncome - 166667 ) * 0.32 + 40833.33;
-        else if (taxableIncome == 666667 )
+        else if (getTaxableIncome() > 166667 && getTaxableIncome() <= 666666 )
+            incomeTax = ( getTaxableIncome() - 166667 ) * 0.32 + 40833.33;
+        else if (getTaxableIncome() == 666667 )
             incomeTax = 200833.33;
-        else if (taxableIncome > 666667 )
-            incomeTax = ( taxableIncome - 666667 ) * 0.35 + 200833.33;
+        else if (getTaxableIncome() > 666667 )
+            incomeTax = ( getTaxableIncome() - 666667 ) * 0.35 + 200833.33;
         return incomeTax;
     }
 
