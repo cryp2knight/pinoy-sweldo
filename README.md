@@ -48,6 +48,8 @@ python3 test.py
 ```
 
 ## TODO
-> Write unit tests
+- Write unit tests
 
-> Other classification for contributions
+- Other classification for contributions
+
+- Create object for employee
